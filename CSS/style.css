@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 800;
+  font-style: normal;
+  src: local("Inter"), url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter-ExtraBold.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: normal;
+  src: local("Inter"), url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: normal;
+  src: local("Inter"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Inter"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.eot") format("eot");
+  font-display: swap;
+}
+body {
+  font-family: "Inter", serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(65, 74, 75)));
+  background: linear-gradient(180deg, rgb(0, 0, 0), rgb(65, 74, 75));
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.inner {
+  height: 100vh;
+  padding: 30px 10px;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.imgbox {
+  overflow: hidden;
+  border-radius: 4px;
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+}
+.imgbox img {
+  width: 100%;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide {
+  border-radius: 20px;
+  height: 70vh;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.slide h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.slide._active {
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+.slide._active h3 {
+  opacity: 1;
+}
+.slide:first-child {
+  background-image: url("../IMG/Labo.avif");
+}
+.slide:nth-child(2) {
+  background-image: url("../IMG/Porsh.avif");
+}
+.slide:nth-child(3) {
+  background-image: url("../IMG/Corvet.avif");
+}
+.slide:nth-child(4) {
+  background-image: url("../IMG/Mercedes.avif");
+}
+.slide:last-child {
+  background-image: url("../IMG/Camaroavif.avif");
+}
